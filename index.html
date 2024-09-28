@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email template - Dentist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
 
-    <style>
+    <style type="text/css">
       * {
         margin: 0;
         padding: 0;
@@ -81,10 +81,10 @@
         font-weight: 500;
       }
 
-      .day-sale-left button {
+      .day-sale-left a {
         border: none;
         outline: none;
-        padding: 12px 30px;
+        padding: 10px 30px;
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -140,7 +140,7 @@
         margin-top: 5px;
       }
 
-      .deals-details-right strong {
+      .deals-details-right b {
         margin-top: 6px;
         display: block;
         color: #4359c1;
@@ -148,7 +148,7 @@
         font-size: 28px;
       }
 
-      .deals-details-right button {
+      .deals-details-right a {
         border: none;
         outline: none;
         background-color: #4359c1;
@@ -268,7 +268,7 @@
           font-size: 18px;
         }
 
-        .deals-details-right strong {
+        .deals-details-right b {
           font-size: 20px;
         }
 
@@ -303,7 +303,6 @@
   </head>
   <body>
     <table class="container">
-      <!-- HEADER SECTON -->
       <thead>
         <tr>
           <td class="header-logo">
@@ -317,15 +316,17 @@
       </thead>
 
       <tbody>
-        <!-- BANNER SECTION  -->
         <tr class="day-sale">
-          <!-- left section with text-->
           <td class="day-sale-left">
             <p class="day-sale-subtitle">HAPPY</p>
             <p class="day-sale-title">Dentist's Day Sale</p>
-            <div><button type="button">40% OFF</button></div>
+            <table style="margin: 15px 0 0;">
+              <tr>
+                <td><a href="#" style="text-decoration: none; font-size: 18px; color: #fff; background-color: orange">40% OFF</a></td>
+              </tr>
+            </table>
           </td>
-          <!-- right section with image -->
+
           <td class="day-sale-right">
             <img
               src="https://i.ibb.co/q5wRx75/dentist-tools.png"
@@ -335,11 +336,10 @@
           </td>
         </tr>
 
-        <!-- DEALS SECTIONS -->
         <tr class="deals">
           <td><h2>our exclusive deals</h2></td>
         </tr>
-        <!-- section one = deals -->
+
         <tr class="deals-details">
           <td class="deals-details-left">
             <img
@@ -353,14 +353,17 @@
             <p>
               High-quality toothbrush with soft bristles for gentle cleaning
             </p>
-            <strong>$4.99</strong>
-            <div>
-              <button>Buy Now</button>
-            </div>
+            <b>$4.99</b>
+            <table>
+              <tr>
+                <td>
+                  <a href="#">Buy Now</a>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
 
-        <!-- Section two = deals -->
         <tr class="deals-details deals-position">
           <td class="deals-details-left">
             <img
@@ -375,14 +378,17 @@
               Fluoride-enriched toothpaste for cavity protection and fresh
               breath
             </p>
-            <strong>$2.49</strong>
-            <div>
-              <button>Buy Now</button>
-            </div>
+            <b>$2.49</b>
+            <table>
+              <tr>
+                <td>
+                  <a href="#">Buy Now</a>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
 
-        <!-- Section three = deals -->
         <tr class="deals-details deals-position">
           <td class="deals-details-left">
             <img
@@ -396,15 +402,18 @@
             <p>
               Dental floss with mint flavor for effective plaque and gum care.
             </p>
-            <strong>$1.99</strong>
-            <div>
-              <button>Buy Now</button>
-            </div>
+            <b>$1.99</b>
+            <table>
+              <tr>
+                <td>
+                  <a href="#">Buy Now</a>
+                </td>
+              </tr>
+            </table>
           </td>
         </tr>
       </tbody>
 
-      <!-- FOOTER SECTION -->
       <tfoot class="footer">
         <tr>
           <td class="logo-footer">
